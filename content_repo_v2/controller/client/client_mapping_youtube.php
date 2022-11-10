@@ -373,7 +373,8 @@ if ($editMode === true) {
             'Label' => "'" . strtoupper($Label) . "'",
             'Label2' => "'" . $Label2 . "'",
             'CMS' => "'" . $CMS . "'",
-            'assetChannelID' => "'" . $assetChannelID . "'"
+            'assetChannelID' => "'" . $assetChannelID . "'",
+            'client_youtube_shares' => "'" . $client_youtube_shares . "'"
              
         ),
     );

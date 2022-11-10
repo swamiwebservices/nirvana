@@ -113,7 +113,24 @@ if (!noError($conn)) {
                  if (isset($_GET["userName"]) && !empty($_GET["userName"])) {
                      $clientSearchArr["client_username"] = cleanQueryParameter($conn, cleanXSS($_GET["userName"]));
                  }
-                
+                 if (isset($_GET["Channel"]) && !empty($_GET["Channel"])) {
+                    $clientSearchArr["Channel"] = cleanQueryParameter($conn, cleanXSS($_GET["Channel"]));
+                }
+                if (isset($_GET["partner_provided"]) && !empty($_GET["partner_provided"])) {
+                    $clientSearchArr["partner_provided"] = cleanQueryParameter($conn, cleanXSS($_GET["partner_provided"]));
+                }
+                if (isset($_GET["ugc"]) && !empty($_GET["ugc"])) {
+                    $clientSearchArr["ugc"] = cleanQueryParameter($conn, cleanXSS($_GET["ugc"]));
+                }
+                if (isset($_GET["Channel_id"]) && !empty($_GET["Channel_id"])) {
+                    $clientSearchArr["Channel_id"] = cleanQueryParameter($conn, cleanXSS($_GET["Channel_id"]));
+                }
+                if (isset($_GET["Label"]) && !empty($_GET["Label"])) {
+                    $clientSearchArr["Label"] = cleanQueryParameter($conn, cleanXSS($_GET["Label"]));
+                }
+                if (isset($_GET["assetChannelID"]) && !empty($_GET["assetChannelID"])) {
+                    $clientSearchArr["assetChannelID"] = cleanQueryParameter($conn, cleanXSS($_GET["assetChannelID"]));
+                }
                  
                 $dateField = null;
               
@@ -152,7 +169,7 @@ if (!noError($conn)) {
                     if (isset($_GET["export"])) {
                         $export = true;
                         $offset = 0;
-                        $resultsPerPage = 99999;
+                        $resultsPerPage = 99999999;
                         $fieldsStr = "id	,Channel,	partner_provided	,ugc	,Channel_id	,Label	,assetChannelID	,Label2	,CMS	,client_youtube_shares ";
 
                         $allClientsInfo = getClientsInfoYoutubeDownload(
@@ -442,6 +459,7 @@ if (!noError($conn)) {
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="responsive">
+                                                <form method="get" action="clients_mapping_youtube.php">
                                                 <table class="table table-bordered table-condensed">
                                                     <thead>
                                                         <tr>
@@ -466,6 +484,23 @@ if (!noError($conn)) {
                                                             <?php
                                                 }
                                                 ?>
+                                                        </tr>
+                                                        <tr>
+
+
+                                                           <th> <!-- <input type="text" name="email_mobile" id="email_mobile" placeholder="Email" value="<?php (isset($email_mobile)) ? $email_mobile : ''?>" class="form-control">--></th> 
+                                                            <th><input type="text" name="partner_provided" id="partner_provided" placeholder="partner provided" value="<?php (isset($partner_provided)) ? $partner_provided : ''?>" class="form-control"></th>
+                                                            <th><input type="text" name="ugc" id="ugc" placeholder="ugc" value="<?php (isset($ugc)) ? $ugc : ''?>" class="form-control"></th>
+                                                            <th><input type="text" name="Channel" id="Channel" placeholder="Channel" value="<?php (isset($Channel)) ? $Channel : ''?>" class="form-control"></th>
+
+                                                            <th><input type="text" name="assetChannelID" id="assetChannelID" placeholder="assetChannelID" value="<?php (isset($assetChannelID)) ? $assetChannelID : ''?>" class="form-control"></th>
+                                                            <th><input type="text" name="Channel_id" id="Channel_id" placeholder="Channel_id" value="<?php (isset($Channel_id)) ? $Channel_id : ''?>" class="form-control"></th>
+                                                            <th><input type="text" name="Label" id="Label" placeholder="Label" value="<?php (isset($Label)) ? $Label : ''?>" class="form-control"></th>
+                                                            <th><input type="text" name="CMS" id="CMS" placeholder="CMS" value="<?php (isset($CMS)) ? $CMS : ''?>" class="form-control"></th>
+                                                            <th></th>
+                                                             
+                                                            <th><input type="submit" value="Filter"></th>
+                                                            
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -517,6 +552,7 @@ if (!noError($conn)) {
                                             ?>
                                                     </tbody>
                                                 </table>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>

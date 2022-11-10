@@ -824,8 +824,11 @@ function getClientsInfoYoutube(
         if (!empty($whereClause)) {
             $whereClause .= " AND ";
         }
-
-        $whereClause .= "{$colName} = '{$searchVal}'";
+        if($searchVal!=""){
+            $searchVal = trim($searchVal);
+            $whereClause .= "{$colName} like '%{$searchVal}%'";
+        }
+       
     }
 
     if ($dateField !== null) {
@@ -839,7 +842,7 @@ function getClientsInfoYoutube(
             $whereClause .= " AND ";
         }
 
-        $whereClause .= "inception_date BETWEEN '{$dateField["fromDate"]}' AND '{$dateField["toDate"]}'";
+        $whereClause .= " inception_date BETWEEN '{$dateField["fromDate"]}' AND '{$dateField["toDate"]}'";
     }
 
     if (empty($fieldsStr)) {
