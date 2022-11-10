@@ -61,7 +61,7 @@ function sendMail($to, $subject, $message)
         //Username to use for SMTP authentication - use full email address for gmail
         $mail->Username ="mailsendteam007@gmail.com";
         //Password to use for SMTP authentication
-        $mail->Password = "India@1947.com";
+        $mail->Password = "";
         //Set who the message is to be sent from
         $mail->setFrom('mailsendteam007@gmail.com', 'Nirvana Digital');
         //Set an alternative reply-to address
