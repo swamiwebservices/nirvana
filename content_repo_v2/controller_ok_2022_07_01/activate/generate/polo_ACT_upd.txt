@@ -1,0 +1,5 @@
+UPDATE  youtube_ecom_paid_features_activation_report_nd1_2021_11 a,crep_cms_clients b
+            set a.shares = JSON_UNQUOTE(JSON_EXTRACT(b.client_type_details, '$.revenueShareYoutube')),
+            a.amt_payable=ROUND((JSON_UNQUOTE(JSON_EXTRACT(b.client_type_details, '$.revenueShareYoutube'))*a.total_amt_recd)/100,8),
+            a.final_payable= ROUND(((a.total_amt_recd-a.witholding)*JSON_UNQUOTE(JSON_EXTRACT(b.client_type_details, '$.revenueShareYoutube'))/100),8)
+            where b.client_username =a.content_owner and b.`status` =1 and b.client_type_details!=''

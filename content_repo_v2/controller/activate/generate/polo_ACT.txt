@@ -1,0 +1,7 @@
+INSERT INTO youtube_video_claim_activation_report_nd2_2010_09 (content_owner, total_amt_recd,us_payout,holding_percentage)
+					SELECT
+						content_owner,
+						Coalesce(ROUND(SUM(partnerRevenue),8),0),
+						Coalesce(ROUND(SUM(CASE WHEN country='US' THEN partnerRevenue END),8),0),
+                        Coalesce(ROUND(AVG(holding_percentage),8),0)
+					FROM  youtube_video_claim_report_nd2_2010_09 where content_owner!='' GROUP by content_owner

@@ -1,0 +1,7 @@
+LOAD DATA INFILE '/var/lib/mysql-files/youtube_red_finance_report/YouTube_Nirvanadigital2_M_20220901_20220930_red_music_rawdata_video_v1-1_Sep-2022.csv'
+								INTO TABLE youtube_red_music_video_finance_report_nd2_2010_09
+								FIELDS TERMINATED BY ','
+								ENCLOSED BY '"'
+								LINES TERMINATED BY '\n'
+								IGNORE 2 ROWS(`adjustmentType`, `day`, `country`, `videoID`, `cutsomID`, `contentType`, `videoTitle`, `videoDuration`, `username`, `uploader`, `channelDisplayName`, `channelID`, `claimType`, `claimOrigin`, `multipleClaims`, `assetID`, `policy`, `ownedViews`, `youtubeRevenueSplit`, `partnerRevenue`)
+								SET datefrom='Music';

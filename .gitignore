@@ -1,0 +1,14 @@
+*.xml
+content_repo_v2/config/config.php
+logs/*
+content_repo_v2/assets/img/profile_images/*
+content_repo_v2/upload/*
+content_repo_v2/UploadedContractCsv/*
+
+*.PDF
+*.pdf
+*.json
+*.jpg
+*.png
+
+content_repo_v2/vendor/*

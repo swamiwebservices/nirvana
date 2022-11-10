@@ -1,0 +1,1 @@
+{"errCode":-1,"errMsg":"Query Successful","dbResource":{"current_field":null,"field_count":null,"lengths":null,"num_rows":null,"type":null}}

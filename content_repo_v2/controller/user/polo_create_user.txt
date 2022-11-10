@@ -1,0 +1,1 @@
+INSERT INTO crep_cms_user (email, firstname, lastname, phone, department, designation, comments, `groups`, rights, created_on, status, updated_on, token) VALUES ('laxman@gmail.com','laxman','laxman','9920769795','Youtube','Owner','laxman','Client','1','2022-11-08 10:11:57',1,'2022-11-08 10:11:57','QLhTzb8i9yv2')

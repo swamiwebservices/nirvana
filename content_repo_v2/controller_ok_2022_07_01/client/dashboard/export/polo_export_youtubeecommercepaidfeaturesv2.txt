@@ -1,0 +1,2 @@
+select  *   from 	(  ( SELECT purchase_type,channel_name,country,channel_id,video_id, earnings as partnerRevenue, Coalesce((CASE WHEN country='US' THEN earnings END),0) as USPAYOUT,
+			Coalesce(((CASE WHEN country='US' THEN earnings END)* holding_percentage /100),0) as WITHHOLDING ,'nd2' as table_name , 85 as rev_share, 18.00 as gst_percentage, holding_percentage FROM youtube_ecommerce_paid_features_report_nd2_2022_05 where  content_owner = 'crictracker' )  )  as list_all order by partnerRevenue desc LIMIT 0, 2

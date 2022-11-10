@@ -1,0 +1,1 @@
+SELECT  shares , gst_percentage , holding_percentage   FROM 	youtube_video_claim_activation_report_nd2_2021_02 where content_owner = 'admirestudiougc'

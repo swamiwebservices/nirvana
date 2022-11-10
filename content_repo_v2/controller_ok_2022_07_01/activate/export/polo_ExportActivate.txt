@@ -1,0 +1,1 @@
+SELECT   * from report_audio_activation_spotify_2021_12 LIMIT 0, 24

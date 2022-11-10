@@ -1,0 +1,1 @@
+CREATE VIEW view_youtube_video_claim_report2_nd2_2010_09 AS SELECT asset_id,count(asset_id) as assetCount,asset_labels,asset_title,content_owner,content_type FROM youtube_video_claim_report2_nd2_2010_09 GROUP by asset_id 

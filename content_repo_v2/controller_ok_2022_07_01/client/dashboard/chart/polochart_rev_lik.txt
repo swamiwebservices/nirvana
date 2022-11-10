@@ -1,0 +1,1 @@
+SHOW TABLES LIKE 'youtube_red_music_video_finance_report_nd%_2022_04'

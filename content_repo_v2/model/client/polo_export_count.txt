@@ -1,0 +1,2 @@
+select  sum(totalcount) as totalcount  from 	 (  select  COUNT('') as totalcount from   report_audio_spotify_2022_01 
+                WHERE report_audio_spotify_2022_01.content_owner='mobilemedia'     ) as final_total 

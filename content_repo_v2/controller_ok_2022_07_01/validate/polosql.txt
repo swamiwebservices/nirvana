@@ -1,0 +1,5 @@
+SELECT `id`, `videoID`, `contentType`, `asset_title`, `asset_labels`, `content_owner`, `partnerRevenue`, `assetID`, `datefrom`
+			 FROM `youtube_red_music_video_finance_report_redmusic_2021_03`
+			 
+			 
+			 LIMIT 0, 50

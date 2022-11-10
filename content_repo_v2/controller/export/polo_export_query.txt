@@ -1,0 +1,2 @@
+SELECT   'partnerRevenue','assetID','channelID','assetChannelID','cutsomID' ,'content_owner','Label'
+            UNION ALL SELECT sum(partnerRevenue),assetID,channelID,assetChannelID,cutsomID,content_owner,Label  FROM youtube_video_claim_report_nd2_2022_03   where content_owner is NULL  group by youtube_video_claim_report_nd2_2022_03.assetID INTO OUTFILE '/var/lib/mysql-files/forDJ/pendingAssetCoMAPRevenue_nd2_2022-03.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' ;

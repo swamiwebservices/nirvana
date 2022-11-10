@@ -1,0 +1,13 @@
+CREATE TABLE youtube_red_music_finance_activation_report_nd2_2022_01  (
+							  `id` int(11) NOT NULL AUTO_INCREMENT,
+							  `content_owner` varchar(50)  NOT NULL,
+							  `total_amt_recd` varchar(50)  NOT NULL,
+							  `shares` varchar(50)  DEFAULT NULL,
+							  `amt_payable` varchar(50)  DEFAULT NULL,
+							  `us_payout` varchar(50)  DEFAULT NULL,
+							  `witholding` varchar(50)  DEFAULT NULL,
+							  `final_payable` varchar(50)  DEFAULT NULL,
+							  `status` ENUM('active', 'inactive') DEFAULT 'inactive',
+							   PRIMARY KEY (id),
+							   INDEX i (content_owner)
+							)

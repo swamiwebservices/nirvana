@@ -1,0 +1,1 @@
+UPDATE youtube_video_claim_report_nd2_2010_09      inner join  	view_youtube_video_claim_report2_nd2_2010_09 on youtube_video_claim_report_nd2_2010_09.assetID = view_youtube_video_claim_report2_nd2_2010_09.asset_id  SET  youtube_video_claim_report_nd2_2010_09.video_title = view_youtube_video_claim_report2_nd2_2010_09.asset_title    

@@ -1,0 +1,1 @@
+ UPDATE youtube_labelengine_report_redmusic_2022_05  t1, view_youtube_labelengine_report_redmusic_2022_05 t2  SET t1.content_owner =t2.content_owner     WHERE t1.assetID=t2.assetID 

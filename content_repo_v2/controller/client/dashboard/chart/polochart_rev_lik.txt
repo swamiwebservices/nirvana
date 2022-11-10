@@ -1,0 +1,1 @@
+SHOW TABLES LIKE 'youtuberedmusic_video_report_redmusic_2022_09'

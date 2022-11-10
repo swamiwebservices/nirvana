@@ -1,0 +1,2 @@
+UPDATE youtube_video_claim_activation_report_nd2_2010_09  m JOIN(     SELECT         content_owner,
+        AVG(holding_percentage) AS holding_percentage     FROM     youtube_video_claim_report_nd2_2010_09  r where r.country='US'    GROUP BY         content_owner ) r ON     m.content_owner = r.content_owner SET     m.holding_percentage = r.holding_percentage

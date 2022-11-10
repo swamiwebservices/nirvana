@@ -1,0 +1,1 @@
+select  *   from 	  (  ( SELECT DATE(dates) as day,SUM(earnings) as partnerRevenue  FROM youtube_ecommerce_paid_features_report_nd1_2021_03 where content_owner = 'mobilemedia'   group by dates ORDER by dates  )   )  as list_all order by day asc LIMIT 0, 50

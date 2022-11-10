@@ -1,0 +1,57 @@
+1 ExportClientsYoutubeRedMusicReportv3 Error_in_query: eostech
+SELECT  shares , gst_percentage , holding_percentage   FROM 	youtube_redmusic_activation_report_redmusic_2022_03 where content_owner = 'eostech'
+
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2020_04 where content_owner = 'airnet'
+ExportClientsYoutubeClaimReportv3 Error_in_query: airnet
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2020_04 where content_owner = 'airnet'
+Error in mysql query
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2020_04 where content_owner = 'airnet'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2020_04 where content_owner = 'airnet'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2020_04 where content_owner = 'airnet'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2020_04 where content_owner = 'airnet'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2020_04 where content_owner = 'airnet'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2020_04 where content_owner = 'umang'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2020_04 where content_owner = 'umang'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2020_04 where content_owner = 'umang'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2020_04 where content_owner = 'nileshsb'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2020_04 where content_owner = 'nileshsb'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2020_04 where content_owner = 'nileshsb'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2022_04 where content_owner = 'shivamusic'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2022_04 where content_owner = 'shivamusic'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2022_04 where content_owner = 'shivamusic'
+1 ExportClientsYoutubeRedMusicReportv3 Error_in_query: shivamusic
+SELECT  shares , gst_percentage , holding_percentage   FROM 	youtube_redmusic_activation_report_redmusic_2022_04 where content_owner = 'shivamusic'
+
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2022_04 where content_owner = 'digibud'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2022_04 where content_owner = 'digibud'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2022_04 where content_owner = 'digibud'
+1 ExportClientsYoutubeRedMusicReportv3 Error_in_query: digibud
+SELECT  shares , gst_percentage , holding_percentage   FROM 	youtube_redmusic_activation_report_redmusic_2022_04 where content_owner = 'digibud'
+
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2022_04 where content_owner = 'marsorbit'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2022_04 where content_owner = 'marsorbit'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2022_04 where content_owner = 'marsorbit'
+1 ExportClientsYoutubeRedMusicReportv3 Error_in_query: marsorbit
+SELECT  shares , gst_percentage , holding_percentage   FROM 	youtube_redmusic_activation_report_redmusic_2022_04 where content_owner = 'marsorbit'
+
+1 ExportClientsYoutubeRedMusicReportv3 Error_in_query: unknown
+SELECT  shares , gst_percentage , holding_percentage   FROM 	youtube_redmusic_activation_report_redmusic_2022_04 where content_owner = 'unknown'
+
+1 ExportClientsYoutubeRedMusicReportv3 Error_in_query: unknown
+SELECT  shares , gst_percentage , holding_percentage   FROM 	youtube_redmusic_activation_report_redmusic_2022_04 where content_owner = 'unknown'
+
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2022_05 where content_owner = 'umang'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2022_05 where content_owner = 'umang'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2022_05 where content_owner = 'umang'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2022_02 where content_owner = 'kiyoshient'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2022_02 where content_owner = 'kiyoshient'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2022_02 where content_owner = 'kiyoshient'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2022_02 where content_owner = 'shethia85'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2022_02 where content_owner = 'shethia85'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2022_02 where content_owner = 'shethia85'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2022_04 where content_owner = 'binacatunes'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2022_04 where content_owner = 'binacatunes'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2022_04 where content_owner = 'binacatunes'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd1_2022_04 where content_owner = 'nilakshprougc'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_nd2_2022_04 where content_owner = 'nilakshprougc'
+SELECT  shares , gst_percentage    FROM 	youtube_video_claim_activation_report_ndkids_2022_04 where content_owner = 'nilakshprougc'

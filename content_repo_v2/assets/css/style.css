@@ -1,0 +1,538 @@
+/* Base styles */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+
+input:-webkit-autofill {
+    color: #2a2a2a !important;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    background: linear-gradient(to bottom, #d4d9dd 0%, #d9d9d9 100%);
+    color: #777;
+}
+#but12{
+    margin-left:17vw;
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+/*  */
+td.fth-header, th.fth-header,
+td.fth-footer, th.fth-footer {
+border-top: none !important;
+border-bottom: 1px solid #ddd;
+}
+td.fth-header, th.fth-header {
+background-color: #3D7083;
+color: white;
+}
+td.fth-footer, th.fth-footer {
+background-color: #4F90A8;
+color
+: white;
+}
+
+.header{
+    padding: 1px 16px 0px 16px;
+    background-color: #3987B3;
+    color: white;
+    /* line-height: 40px; */
+    /* border-radius: 10px 10px 0 0px; */
+}
+#head{
+    padding: 1px 16px 0px 16px;
+    /* background-color: #ffffff; */
+    /* color: white; */
+    /* line-height: 40px; */
+    border-radius: 10px 10px 0 0px;
+    margin-bottom: 55px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/*  */
+button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* innerContainer */
+.innerContainer {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    width: 30em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Profile Card */
+.profile {
+    position: relative;
+}
+
+.profile--open {}
+
+.profile--open .profile__form {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    transform: translateY(-11em);
+    padding-top: 11em;
+}
+
+.profile--open .profile__fields {
+    opacity: 1;
+    visibility: visible;
+}
+
+.profile--open .profile__avatar {
+    transform: translate(-50%, -1.5em);
+    font-size: 1.5em;
+}
+
+.profile__form {
+    position: relative;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 2em;
+    border-radius: .25em;
+    -webkit-filter: drop-shadow(0 0 2em rgba(0, 0, 0, 0.2));
+    transition:
+        opacity .4s ease-in-out,
+        height .4s ease-in-out,
+        transform .4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        padding .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile__fields {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile__avatar {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 8.5em;
+    height: 1.5em;
+    display: block;
+    transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    will-change: transform;
+}
+
+.profile__avatar:focus {
+    outline: 0;
+}
+
+
+/* Form */
+.form-group {
+    margin-bottom: 30px;
+}
+
+.field {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.label {
+    position: absolute;
+    height: 2rem;
+    line-height: 2rem;
+    bottom: 0;
+    color: #999;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.input {
+    width: 100%;
+    font-size: 100%;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #eee;
+    color: #777;
+    transition: all .2s ease-in;
+}
+
+.input:focus {
+    outline: 0;
+    border-color: #ccc;
+}
+
+/* Using required and a faux pattern to see if input has text from http://stackoverflow.com/questions/16952526/detect-if-an-input-has-text-in-it-using-css */
+.input:focus+.label,
+input:valid+.label {
+    transform: translateY(-100%);
+    font-size: 0.75rem;
+    color: #ccc;
+}
+
+/* NEW Validate Moodel*/
+.intro {
+    max-width:1280px;
+    margin:1em auto;
+}
+.table-scroll {
+    position: relative;
+    max-width: 2000px !important;
+    width:100%;
+    
+    margin: auto;
+    display:table;
+    
+}
+.table-wrap {
+    width: 100%;
+    display:block;
+    height: 510px;
+    overflow: auto;
+    position:relative;
+    z-index:1;
+}
+.table-scroll table {
+    width: 100%;
+    margin: auto;
+    /* border-collapse: separate; */
+    border-spacing: 0;
+}
+.table-scroll th, .table-scroll td {
+    padding: 10px 15px;
+    border: 1px solid #d4cfcf;
+    background: #fff;
+  
+}
+.faux-table table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.faux-table table + table {
+    top: auto;
+    bottom: 0;
+}
+.faux-table table tbody, .faux-table  tfoot {
+    visibility: hidden;
+    border-color: transparent;
+}
+.faux-table table + table thead {
+    visibility: hidden;
+    border-color: transparent;
+}
+.faux-table table + table  tfoot{
+    visibility:visible;
+    border-color:#000;
+}
+.faux-table thead th, .faux-table tfoot th, .faux-table tfoot td {
+    background: #ccc;
+}
+.faux-table {
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow-y:scroll;
+}
+.faux-table thead, .faux-table tfoot, .faux-table thead th, .faux-table tfoot th, .faux-table tfoot td {
+    position:relative;
+    z-index:2;
+}
+/* search keyword css*/
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+
+
+/*End validate model*/
+
+
+/* Button */
+.btn {
+    border: 0;
+    font-size: 0.75rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1.5rem;
+    color: white;
+    background: #3987B3;
+    text-transform: uppercase;
+    border-radius: .25rem;
+    letter-spacing: .2em;
+    transition: background .2s;
+}
+.button {
+    background-color: #9e9e9e;
+    border: none;
+    color: white;
+    padding: 3px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 1px 1px;
+    cursor: pointer;
+  }
+  .button1 {
+        background-color: rgba(158, 158, 158, 0.44);
+        border: none;
+        color: white;
+        padding: 3px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 1px 1px;
+        cursor: pointer;
+    }
+
+    .form-control1 {
+        border: 0;
+        font-size:14px;
+        /* background-image: linear-gradient(#c5392a, #c5392a), linear-gradient(#9E9E9E, #D2D2D2); */
+        background-size: 0 2px, 100% 1px;
+        background-repeat: no-repeat;
+        background-position: center bottom, center calc(100% - 1px);
+        background-color: transparent;
+        transition: background 0s ease-out;
+        float: none;
+        box-shadow: none;
+        border-radius: 0;
+        font-weight: 400;
+    }
+
+.btn:focus {
+    outline: 0;
+}
+
+.parsley-errors-list li {
+    position: absolute;
+}
+
+/*modal style*/
+.modal {
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal .modal-header .close2 {
+    color: #ffffff;
+}
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content2 {
+    position: relative;
+    background-color: #fefefe;
+    /* margin: auto; */
+    padding: 0;
+    border: 1px solid #888;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+td {
+    padding: 10px;
+}
+.keywordRowBox{
+    background-color: #999999;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.modal-header {
+    padding: 1px 16px 0px 16px;
+    background-color: #3987B3;
+    color: white;
+    line-height: 40px;
+    border-radius: 10px 10px 0 0px;
+}
+
+.modal-header .close {
+    margin-top: auto;
+    line-height: 2em;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+.modal2-body {
+    padding: 35px 16px;
+}
+
+/* user actions drop down */
+.user-header {
+    text-align: center;
+    padding: 10px;
+}
+
+#userDP {
+    max-width: 200px;
+    max-height: 150px;
+}
+
+/* Sidebar */
+.selected-tab {
+    background-color: #3987B3 !important;
+    color: #fff !important;
+    border-radius: 0em !important;
+}
+
+.para-new {
+    color: #fff;
+}
+
+.panel-title img {
+    vertical-align: top;
+}
+
+.searchForm .form-control {
+    max-width: 250px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* innerContainer */
+    .innerContainer {
+        width: 100%;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        width: 100%;
+    }
+    #but12{
+        margin-left:0px;
+        }
+
+     
+}

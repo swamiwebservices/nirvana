@@ -1,0 +1,1 @@
+UPDATE report_audio_spotify_2022_05      inner join  	channel_co_maping on report_audio_spotify_2022_05.Label = channel_co_maping.Label  SET report_audio_spotify_2022_05.content_owner = channel_co_maping.partner_provided   ,autoassign_steps='1'  where (report_audio_spotify_2022_05.content_owner='' || report_audio_spotify_2022_05.content_owner is NULL)   

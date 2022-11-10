@@ -1,0 +1,1 @@
+UPDATE channel_co_maping SET partner_provided = 'laxman', Channel = 'laxman', ugc = 'laxman', Channel_id = 'channel to be confirmed', Label = 'laxman', assetChannelID = 'channel to be confirmed', Label2 = 'laxman', CMS = 'nd2', client_youtube_shares = '30' WHERE id = '5755'

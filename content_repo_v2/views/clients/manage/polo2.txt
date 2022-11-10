@@ -1,0 +1,1 @@
+SELECT * FROM crep_cms_clients WHERE client_username = 'JSLcinemaUGC' ORDER BY client_username

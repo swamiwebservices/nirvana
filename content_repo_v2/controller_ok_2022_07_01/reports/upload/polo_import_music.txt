@@ -1,0 +1,6 @@
+LOAD DATA INFILE '/var/lib/mysql-files/music_reports/Spotify-May-22.csv'
+			INTO TABLE report_audio_spotify_2022_05
+			FIELDS TERMINATED BY ','
+			ENCLOSED BY '"'
+			LINES TERMINATED BY '\n'
+			IGNORE 1 ROWS (`Country`,`Product`,`URI`,`UPC`,`EAN`,`ISRC`,`Track_name`,`Artist_name`,`Composer_name`,`Album_name`,`Quantity`,`Label`,`Payable_invoice`,`Invoice_currency`,`Payable_EUR`,`Payable_USD`);

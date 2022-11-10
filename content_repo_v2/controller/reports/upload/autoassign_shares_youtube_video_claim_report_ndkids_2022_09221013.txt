@@ -1,0 +1,1 @@
+UPDATE youtube_video_claim_report_ndkids_2022_09 inner join channel_co_maping on youtube_video_claim_report_ndkids_2022_09.assetChannelID = channel_co_maping.assetChannelID  SET youtube_video_claim_report_ndkids_2022_09.holding_percentage = channel_co_maping.client_youtube_shares   where  channel_co_maping.CMS ='nd kids' and country='US' 

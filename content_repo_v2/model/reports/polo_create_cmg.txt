@@ -1,0 +1,6 @@
+LOAD DATA INFILE '/var/lib/mysql-files/music_reports/nirvana_publishing_20220501_nirvana_publishing_claim_raw_non_cmg20220501_0.csv'
+			INTO TABLE report_publishing_main_non_cmg_2022_06
+			FIELDS TERMINATED BY ','
+			ENCLOSED BY '"'
+			LINES TERMINATED BY '\n'
+			IGNORE 1 ROWS (`Adjustment_Type`,`Day`,`Country`, `Video_ID`, `Channel_ID`, `Asset_ID`, `Asset_Label`, `Asset_Channel_ID`, `Asset_Type`, `Custom_ID`, `ISRC`, `ISWC`, `HFA_Song_Code`, `Content_Type`, `Policy`, `Claim_Type`, `Claim_Origin`, `Music_Claim_Type`, `Composition_Right_Type`, `Ownership_Percentage`, `Owned_Views`, `YouTube_Revenue_Split_Auction`, `YouTube_Revenue_Split_Reserved`,`YouTube_Revenue_Split_Partner_Sold_YouTube_Served`, `YouTube_Revenue_Split_Partner_Sold_Partner_Served`, `YouTube_Revenue_Split`, `Partner_Revenue_Auction`, `Partner_Revenue_Reserved`, `Partner_Revenue_Partner_Sold_YouTube_Served`, `Partner_Revenue_Partner_Sold_Partner_Served`, `partnerRevenue`);

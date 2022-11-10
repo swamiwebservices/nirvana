@@ -1,0 +1,1 @@
+CREATE VIEW view_youtuberedmusic_video_report2_redmusic_2022_05 AS SELECT asset_id,count(asset_id) as assetCount,asset_labels,asset_title,content_owner,content_type FROM youtuberedmusic_video_report2_redmusic_2022_05 GROUP by asset_id 

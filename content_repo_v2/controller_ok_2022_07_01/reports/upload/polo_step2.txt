@@ -1,0 +1,1 @@
+UPDATE youtuberedmusic_video_report_redmusic_2022_05      inner join  	view_youtuberedmusic_video_report2_redmusic_2022_05 on youtuberedmusic_video_report_redmusic_2022_05.assetID = view_youtuberedmusic_video_report2_redmusic_2022_05.asset_id  SET  youtuberedmusic_video_report_redmusic_2022_05.video_title = view_youtuberedmusic_video_report2_redmusic_2022_05.asset_title    

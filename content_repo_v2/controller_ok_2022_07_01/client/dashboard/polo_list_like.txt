@@ -1,0 +1,1 @@
+SHOW TABLES LIKE 'youtube_ecommerce_paid_features_report_nd%_2022_05'

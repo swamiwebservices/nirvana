@@ -1,0 +1,1 @@
+UPDATE report_audio_saavan_2021_11      inner join  	channel_co_maping on report_audio_saavan_2021_11.Label = channel_co_maping.Label  SET report_audio_saavan_2021_11.content_owner = channel_co_maping.partner_provided   ,autoassign_steps='1'  where (report_audio_saavan_2021_11.content_owner='' || report_audio_saavan_2021_11.content_owner is NULL)   

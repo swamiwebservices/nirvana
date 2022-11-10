@@ -1,0 +1,1 @@
+INSERT INTO channel_co_maping_amazon (partner_provided,session_id,title_name,created_on,updated_on) VALUES ('8xmugc','aa','aa','2021-01-04 05:01:44','2021-01-04 05:01:44')

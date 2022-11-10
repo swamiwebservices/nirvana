@@ -1,0 +1,4 @@
+UPDATE  youtube_video_claim_activation_report_nd2_2010_09 a,crep_cms_clients b
+		                set 
+                        a.final_payable_with_gst= ROUND(a.final_payable + (final_payable * gst_percentage / 100),8)
+                        where b.client_username =a.content_owner   and b.`status` =1 

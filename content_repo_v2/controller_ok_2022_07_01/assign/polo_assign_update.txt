@@ -1,0 +1,1 @@
+UPDATE youtube_labelengine_report_nd1_2021_09 SET content_owner = '8XM' WHERE 1=1 and   and assetID='dddd' and content_owner is Null 

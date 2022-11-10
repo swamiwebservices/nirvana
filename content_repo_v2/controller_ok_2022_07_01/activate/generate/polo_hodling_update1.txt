@@ -1,0 +1,2 @@
+UPDATE youtube_red_music_finance_activation_report_redmusic_2022_05  m JOIN(     SELECT         content_owner,
+        AVG(holding_percentage) AS holding_percentage     FROM     youtube_red_music_video_finance_report_redmusic_2022_05  r where r.country='US'     GROUP BY         content_owner ) r ON     m.content_owner = r.content_owner SET     m.holding_percentage = r.holding_percentage

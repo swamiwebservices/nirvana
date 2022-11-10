@@ -1,0 +1,6 @@
+UPDATE  youtube_video_claim_activation_report_nd2_2021_02 a 
+		                set 
+						a.amt_payable=ROUND((a.shares * a.total_amt_recd)/100,8),
+						a.final_payable= ROUND(((a.total_amt_recd - a.witholding) * a.shares / 100),8),
+                        a.final_payable_with_gst= ROUND(a.final_payable + (final_payable * gst_percentage / 100),8)
+                         

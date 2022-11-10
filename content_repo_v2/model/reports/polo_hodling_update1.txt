@@ -1,0 +1,3 @@
+UPDATE  youtube_video_claim_activation_report_nd2_2022_05 a , youtube_video_claim_report_nd2_2022_05 b
+    set a.holding_percentage =  avg(b.holding_percentage)
+    where a.content_owner=b.content_owner and b.country='US' and b.holding_percentage > 0 

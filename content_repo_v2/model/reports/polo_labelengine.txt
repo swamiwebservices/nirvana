@@ -1,0 +1,1 @@
+CREATE TABLE view_youtube_labelengine_report_redmusic_2021_03 AS SELECT r1.contentType, r1.assetID, r1.country,r1.content_owner  FROM youtuberedmusic_video_report_redmusic_2021_03 r1   WHERE r1.contentType != 'Partner-provided' AND r1.content_owner IS NOT NULL   GROUP BY r1.assetID 

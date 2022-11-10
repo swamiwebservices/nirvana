@@ -1,0 +1,1 @@
+UPDATE youtube_video_claim_report_nd1_2022_05 inner join channel_co_maping on youtube_video_claim_report_nd1_2022_05.channelID = channel_co_maping.Channel_id  SET youtube_video_claim_report_nd1_2022_05.holding_percentage = channel_co_maping.client_youtube_shares   where  (channel_co_maping.client_youtube_shares!=''  or channel_co_maping.client_youtube_shares is NOT NULL  )

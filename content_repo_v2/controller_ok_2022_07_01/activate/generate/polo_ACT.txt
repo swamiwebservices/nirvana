@@ -1,0 +1,7 @@
+INSERT INTO report_audio_activation_spotify_2022_05 (content_owner, total_amt_recd,us_payout,witholding,final_payable)
+					SELECT
+						content_owner,
+						Coalesce(ROUND(SUM(Payable_USD),20),0),
+						0,
+						0,0
+					FROM  report_audio_spotify_2022_05 where content_owner!='' GROUP by content_owner

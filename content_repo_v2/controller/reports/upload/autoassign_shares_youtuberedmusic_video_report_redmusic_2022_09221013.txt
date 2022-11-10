@@ -1,0 +1,1 @@
+UPDATE youtuberedmusic_video_report_redmusic_2022_09 inner join channel_co_maping on youtuberedmusic_video_report_redmusic_2022_09.assetChannelID = channel_co_maping.assetChannelID  SET youtuberedmusic_video_report_redmusic_2022_09.holding_percentage = channel_co_maping.client_youtube_shares   where  channel_co_maping.CMS ='ND Music' and country='US' 

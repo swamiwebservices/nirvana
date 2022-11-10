@@ -1,0 +1,1 @@
+UPDATE youtube_ecommerce_paid_features_report_nd2_2022_09 inner join channel_co_maping on youtube_ecommerce_paid_features_report_nd2_2022_09.channel_id = channel_co_maping.Channel_id  SET youtube_ecommerce_paid_features_report_nd2_2022_09.holding_percentage = channel_co_maping.client_youtube_shares   where  channel_co_maping.CMS ='ND2' and country='US'  
