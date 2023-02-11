@@ -1,7 +1,7 @@
-LOAD DATA INFILE '/var/lib/mysql-files/youtube_red_finance_report/YouTube_Nirvanadigital2_M_20220901_20220930_red_music_rawdata_video_v1-1_Sep-2022.csv'
-								INTO TABLE youtube_red_music_video_finance_report_nd2_2010_09
+LOAD DATA INFILE '/var/lib/mysql-files/youtube_red_finance_report/YouTube_NirvanaMusic_M_20221201_20221231_red_label_rawdata_video_v1-1_0_Dec-2022.csv'
+								INTO TABLE youtube_red_music_video_finance_report_redmusic_2022_12
 								FIELDS TERMINATED BY ','
 								ENCLOSED BY '"'
 								LINES TERMINATED BY '\n'
-								IGNORE 2 ROWS(`adjustmentType`, `day`, `country`, `videoID`, `cutsomID`, `contentType`, `videoTitle`, `videoDuration`, `username`, `uploader`, `channelDisplayName`, `channelID`, `claimType`, `claimOrigin`, `multipleClaims`, `assetID`, `policy`, `ownedViews`, `youtubeRevenueSplit`, `partnerRevenue`)
+								IGNORE 2 ROWS(`adjustmentType`, `country`, `day`, `videoID`, `channelID`, `assetID`, `assetChannelID`, `asset_title`, `asset_labels`, `assetType`, `cutsomID`, `ISRC`, `UPC`, `GRid`,artist, `album`, `Label`, `claimType`, `contentType`, `Offer`, `ownedViews`, `MonetizedViewsAudio`, `MonetizedViewsAudioVisual`, `MonetizedViews`, `youtubeRevenueSplit`, `partnerRevenueProRata`, `partnerRevenuePerSubMin`, `partnerRevenue`, `content_owner`, `datefrom`)
 								SET datefrom='Music';

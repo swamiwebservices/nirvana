@@ -1,1 +1,1 @@
-CREATE TABLE view_youtube_labelengine_report_redmusic_2022_09 AS SELECT r1.contentType, r1.assetID, r1.content_owner  FROM youtuberedmusic_video_report_redmusic_2022_09 r1   WHERE  r1.contentType ='UGC' and  r1.content_owner IS NOT NULL   GROUP BY r1.assetID 
+CREATE TABLE view_youtube_labelengine_report_redmusic_2022_12 AS SELECT r1.contentType, r1.assetID, r1.content_owner  FROM youtuberedmusic_video_report_redmusic_2022_12 r1   WHERE  r1.contentType ='UGC' and  r1.content_owner IS NOT NULL   GROUP BY r1.assetID 

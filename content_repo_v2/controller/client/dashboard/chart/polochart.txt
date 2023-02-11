@@ -1,1 +1,1 @@
-SHOW TABLES LIKE 'youtuberedmusic_video_report_redmusic_2022_09'
+SHOW TABLES LIKE 'youtube_video_claim_report_nd%_2022_12'

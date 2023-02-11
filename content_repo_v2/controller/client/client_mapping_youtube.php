@@ -333,8 +333,8 @@ if ($editMode === true) {
          echo (json_encode($returnArr));
          exit;
      }
-
-    $clientSearchArr = array("Channel" => $Channel,"partner_provided" => $partner_provided,"ugc" => $ugc,"assetChannelID" => $assetChannelID,"CMS" => $CMS);
+//
+    $clientSearchArr = array("Channel" => $Channel,"partner_provided" => $partner_provided,"ugc" => $ugc,"assetChannelID" => $assetChannelID,"CMS" => $CMS,"Label" => $Label,"Label2" => $Label2 );
     $fieldsStr = "assetChannelID";
     $clientInfo = getClientsInfoYoutube($clientSearchArr, $fieldsStr, null, $conn);
     if (!noError($clientInfo)) {

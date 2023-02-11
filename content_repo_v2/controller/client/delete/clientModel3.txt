@@ -1,1 +1,1 @@
-DELETE FROM channel_co_maping WHERE id = '5570'
+DELETE FROM channel_co_maping WHERE id = '5826'

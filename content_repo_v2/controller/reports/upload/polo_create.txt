@@ -1,4 +1,4 @@
-CREATE TABLE youtube_video_claim_report_nd2_2010_09  (
+CREATE TABLE youtube_video_claim_report_nd2_2022_12  (
 		`id` int(11) NOT NULL AUTO_INCREMENT,
 		`adjustmentType` varchar(50) DEFAULT NULL,
         `day` varchar(10)   DEFAULT NULL,

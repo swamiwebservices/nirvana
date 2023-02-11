@@ -1,0 +1,6 @@
+Error_in_query: 
+SELECT  shares , gst_percentage , holding_percentage   FROM 	youtube_labelengine_activation_report_redmusic_2022_10 where content_owner = 'jigarmusicugc'
+Error in mysql query
+Error_in_query: 
+SELECT  shares , gst_percentage , holding_percentage   FROM 	youtube_labelengine_activation_report_redmusic_2022_10 where content_owner = 'rdc'
+Error in mysql query

@@ -182,7 +182,7 @@ if (!noError($conn)) {
                             $queryresult = runQuery($query, $conn);
                         }
 
-                        $clientSearchArr = array("Channel" => $record['Channel'], "partner_provided" => $record['Partner_Provided'], "ugc" => $record['UGC'], "assetChannelID" => $record['AssetChannelID'], "CMS" => $record['CMS']);
+                        $clientSearchArr = array("Channel" => $record['Channel'], "partner_provided" => $record['Partner_Provided'], "ugc" => $record['UGC'], "assetChannelID" => $record['AssetChannelID'], "CMS" => $record['CMS'],"Label" => $record['Label'],"Label2" => $record['Label2']);
                         $fieldsStr = "assetChannelID";
                         $clientInfo = getClientsInfoYoutube($clientSearchArr, $fieldsStr, null, $conn);
                         if (!noError($clientInfo)) {

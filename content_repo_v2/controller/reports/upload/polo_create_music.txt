@@ -1,4 +1,4 @@
-CREATE TABLE report_audio_spotify_2022_09  (
+CREATE TABLE report_audio_spotify_2022_12  (
           `id` int(11) NOT NULL AUTO_INCREMENT,
           `Country`  varchar(50) DEFAULT NULL,
           `Product` varchar(150) DEFAULT NULL,

@@ -1,0 +1,1 @@
+UPDATE youtube_red_music_video_finance_report_ndkids_2022_10 inner join channel_co_maping on youtube_red_music_video_finance_report_ndkids_2022_10.channelID = channel_co_maping.Channel_id  SET youtube_red_music_video_finance_report_ndkids_2022_10.holding_percentage = channel_co_maping.client_youtube_shares   where  channel_co_maping.CMS ='nd kids' and country='US' 

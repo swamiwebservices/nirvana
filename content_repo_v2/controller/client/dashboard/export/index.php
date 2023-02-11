@@ -33,6 +33,9 @@ if (!noError($conn)) {
     $month = date("m", strtotime($selectedDate));
 
     $type_table = (isset($_POST['type_table'])) ? $_POST['type_table'] : 'nd';
+    
+    $downlaodType = (isset($_POST['downlaodType'])) ? $_POST['downlaodType'] : 'normal';
+
 
     $startTransaction = startTransaction($conn);
     if (!noError($startTransaction)) {
@@ -140,7 +143,11 @@ if (!noError($conn)) {
 
     $controller_name = $controller;
 
-    $query = "INSERT INTO `activity_downlaod_report` ( `content_owner`,`email`, `type_table`, `date_start`, `date_end`, `status_flag`, `date_added`, `table_name`, file_name,table_type_name,`status_name`, `param_data`,  `selected_date`, `controller_name`,type_cate,title_name,status_message) VALUES ( '{$client}', '{$email}', '{$type_table}', '{$date_start}', NULL, '{$status_flag}', '{$date_added}', '{$table_name}', '{$file_name}', '{$table_type_name}', '{$status_name}', '{$param_data}',   '{$reporttime}' , '{$controller_name}', '{$type_cate}','{$title_name}','{$status_message}')";
+    //$query = "INSERT INTO `activity_downlaod_report` ( `content_owner`,`email`, `type_table`, `date_start`, `date_end`, `status_flag`, `date_added`, `table_name`, file_name,table_type_name,`status_name`, `param_data`,  `selected_date`, `controller_name`,type_cate,title_name,status_message) VALUES ( '{$client}', '{$email}', '{$type_table}', '{$date_start}', NULL, '{$status_flag}', '{$date_added}', '{$table_name}', '{$file_name}', '{$table_type_name}', '{$status_name}', '{$param_data}',   '{$reporttime}' , '{$controller_name}', '{$type_cate}','{$title_name}','{$status_message}')";
+
+    $query = "INSERT INTO `activity_downlaod_report` ( `content_owner`,`email`, `type_table`, `date_start`, `date_end`, `status_flag`, `date_added`, `table_name`, file_name,table_type_name,`status_name`, `param_data`,  `selected_date`, `controller_name`,type_cate,title_name,status_message,downlaodType) VALUES ( '{$client}', '{$email}', '{$type_table}', '{$date_start}', NULL, '{$status_flag}', '{$date_added}', '{$table_name}', '{$file_name}', '{$table_type_name}', '{$status_name}', '{$param_data}',   '{$reporttime}' , '{$controller_name}', '{$type_cate}','{$title_name}','{$status_message}','{$downlaodType}')";
+    
+
     $queryresult = runQuery($query, $conn);
 
     $commit = commitTransaction($conn);

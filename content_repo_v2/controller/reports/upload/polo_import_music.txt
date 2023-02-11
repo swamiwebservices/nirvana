@@ -1,5 +1,5 @@
-LOAD DATA INFILE '/var/lib/mysql-files/music_reports/SpotifySep-22.csv'
-			INTO TABLE report_audio_spotify_2022_09
+LOAD DATA INFILE '/var/lib/mysql-files/music_reports/SpotifyDec-22.csv'
+			INTO TABLE report_audio_spotify_2022_12
 			FIELDS TERMINATED BY ','
 			ENCLOSED BY '"'
 			LINES TERMINATED BY '\n'
